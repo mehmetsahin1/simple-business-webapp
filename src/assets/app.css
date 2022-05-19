@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "../../node_modules/remixicon/fonts/remixicon.css";
+
+.logo::before {
+  content: "";
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  background-color: rgba(24, 24, 24, 0.9);
+  display: block;
+  border-radius: 50%;
+  left: -6px;
+}
+
+@layer components {
+  .custom-transition {
+    @apply transition-all ease-in-out duration-200;
+  }
+}
